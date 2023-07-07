@@ -1,4 +1,65 @@
 body{
-    background: (180deg, rgba(#0c344c, .15), rgba(white, 0));
-    background: #0c344c;
+    color: aliceblue;
+}
+* a{
+    color:aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    color:blue;
+}
+.menu img{
+    width: 8vh;
+    display: flex;
+}
+
+.menu #text-menu{
+    text-align: center;
+    font-size: small;
+}
+
+.menu #img-menu{
+    margin: 6px;
+    background-color: #0c344c;
+    border-radius: 3px;
+}
+.menu {
+    display: flex;
+    background-color: #0c344c;
+}
+
+.btn-link{
+    color: aliceblue;
+    text-decoration: none;
+}
+.box-links{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box-links img{
+    width: 100px;
+    margin: 3px;
+}
+
+.container-fluid{
+    position: relative;
+    background-color: #0c344c;
+    min-height: 90.7vh;
+    background-image: linear-gradient(0deg,#0c344c,  #364f61, #475663);
+}
+
+.content-page{
+    padding-bottom: 2.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 44vh;
+   
+    text-align: center;
+    font-size: small;
 }
