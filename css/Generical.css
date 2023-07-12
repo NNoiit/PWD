@@ -9,10 +9,6 @@ a:hover{
     cursor: pointer;
     color:blue;
 }
-.body{
-
-    width: 100%;
-}
 
 .header{
     height: 5vh;
@@ -21,16 +17,16 @@ a:hover{
     font-size: 1.3vh;
 }
 
+.row img{
+    padding: 0;
+}
+
 #icon-emerj{
     width: 7vh;
     height: 7vh;
     position: absolute;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-}
-
-#capa{
-    width: 100%;
 }
 
 .container{
