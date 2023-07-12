@@ -1,65 +1,53 @@
-body{
-    color: aliceblue;
-}
-* a{
+*{
     color:aliceblue;
+}
+
+a{
     text-decoration: none;
 }
 a:hover{
     cursor: pointer;
     color:blue;
 }
-.menu img{
-    width: 8vh;
-    display: flex;
-}
 
-.menu #text-menu{
-    text-align: center;
-    font-size: small;
-}
-
-.menu #img-menu{
-    margin: 6px;
+.header{
+    height: 5vh;
     background-color: #0c344c;
-    border-radius: 3px;
-}
-.menu {
-    display: flex;
-    background-color: #0c344c;
+    text-align: start;
+    font-size: 1.3vh;
 }
 
-.btn-link{
-    color: aliceblue;
-    text-decoration: none;
-}
-.box-links{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.row img{
+    padding: 0;
 }
 
-.box-links img{
-    width: 100px;
-    margin: 3px;
+#icon-emerj{
+    width: 7vh;
+    height: 7vh;
+    position: absolute;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
+.container{
+    margin-top: 6%;
+    width: 100%;
+    height: 58vh;
+}
 .container-fluid{
+    font-size: smaller;
+    text-align: center;
     position: relative;
-    background-color: #0c344c;
-    min-height: 90.7vh;
     background-image: linear-gradient(0deg,#0c344c,  #364f61, #475663);
 }
 
-.content-page{
-    padding-bottom: 2.5rem;
+.icon-butons{
+    width: 10vh;
+    height: 10vh;
 }
-footer{
+
+.footer{
     position: absolute;
     bottom: 0;
-    width: 44vh;
-   
     text-align: center;
-    font-size: small;
 }
