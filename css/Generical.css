@@ -1,6 +1,7 @@
 *{
     color:aliceblue;
 }
+
 a{
     text-decoration: none;
 }
@@ -8,52 +9,49 @@ a:hover{
     cursor: pointer;
     color:blue;
 }
+.body{
 
-.container{
     width: 100%;
-    padding: 0;
-
-    background-image: linear-gradient(0deg,#0c344c,  #364f61, #475663);
 }
 
-.row img{
-    width: 70px;
-    height: 70px;
+.header{
+    height: 5vh;
+    background-color: #0c344c;
+    text-align: start;
+    font-size: 1.3vh;
+}
+
+#icon-emerj{
+    width: 7vh;
+    height: 7vh;
     position: absolute;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
 
-.col-1{
-    width: 1%;
-    height: 5vh;
-    background-color: #0c344c;
-
-}
-.col-2{
-    width: 20%;
-    height: 5vh;
-    background-color: #0c344c;
-}
-.col-3{
-    width: 71%;
-    height: 5vh;
-    font-size: 1.1vh;
-    background-color: #0c344c;
-}
-
-.capa img{
+#capa{
     width: 100%;
 }
 
-.container-fluid{
-    position: relative;
-    min-height: 70vh;
+.container{
+    margin-top: 6%;
+    width: 100%;
+    height: 58vh;
 }
-footer{
+.container-fluid{
+    font-size: smaller;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(0deg,#0c344c,  #364f61, #475663);
+}
+
+.icon-butons{
+    width: 10vh;
+    height: 10vh;
+}
+
+.footer{
     position: absolute;
     bottom: 0;
-    width: 44vh;
     text-align: center;
-    font-size: 10px;
 }
