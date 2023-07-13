@@ -1,6 +1,7 @@
 *{
     color:aliceblue;
 }
+body { min-height: 100vh; }
 
 a{
     text-decoration: none;
@@ -32,12 +33,13 @@ a:hover{
 .container{
     margin-top: 6%;
     width: 100%;
-    height: 58vh;
+    
 }
 .container-fluid{
     font-size: smaller;
     text-align: center;
     position: relative;
+    height: 85vh;
     background-image: linear-gradient(0deg,#0c344c,  #364f61, #475663);
 }
 
@@ -47,7 +49,11 @@ a:hover{
 }
 
 .footer{
+    background-color: #0c344c;
+    width: 100%;
+    height: 15vh;;
     position: absolute;
+    padding: 0;
     bottom: 0;
     text-align: center;
 }
