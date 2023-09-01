@@ -1,89 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c344c" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="manifest" href="manifest.json" />
 
-    <link rel="stylesheet" href="css/Generical.css">
+    <link rel="stylesheet" href="assets/css/Generical.css" />
 
     <title>EMERJ</title>
   </head>
-  <body >
-    <div class="container-fluid">
-      <div class="row ">
-        
-        <div class="col-2 header">
-          <img id="icon-emerj" src="Icons/9053icon-emerj.ico" alt="Logo-EMERJ">
-        </div>
-        <div class="col header text-center">
-          <div>
-            EMERJ - Escola da Magistratura do Estado do Rio de Janeiro
-          </div>
-        </div>
-        
-        <img src="Icons/capa.jpg"  alt="Foto da Entrada da Escola de Magistratura do Rio de Janeiro">
-        
+  <body>
+    
+    <div class="navbar navbar-expand banner">
+      <div></div>
+      <div class="nav-item icon-header">
+        <img
+          id="icon-emerj"
+          src="./assets/Icons/9053icon-emerj.ico"
+          alt="Logo-EMERJ"
+        />
       </div>
-      
-      <div class="container">
-        <div>
-          <div class="row justify-content-evenly ">
+      <div class="nav-item header text-center">
+        <h6>
+          EMERJ - Escola da Magistratura <br />
+          do Estado do Rio de Janeiro
+        </h6>
+      </div>
+    </div>
 
-            <div class="col">
-              <a href="https://site.emerj.jus.br/cursos/5">
-                <img class="icon-butons" src="Icons/cursos.png" alt="Icone de Cursos">
-              </a>
-              <p>Cursos</p>
-            </div>
-
-            <div class="col">
-              <a href="https://www3.tjrj.jus.br/idserverjus-front/#/login">
-                <img class="icon-butons" src="Icons/saldodehoras.png" alt="Icone de Saldo de Horas">
-              </a>
-              
-              <p>Saldo de Horas</p>
+    <div class="box-alert modal" id="box-alert" data-backdrop="true" tabindex="-1">
+      <div class="modal-box-content modal-content border-2 border-light">
+        <!-------------------------------------------------------------------------------------------->
+        <div class="iphone d-none align-items-center text-center">
+            <div class="card-header icon-emerj justify-content-around">
+              <div class="modal-title"><img src="./favicon-32x32.png" alt=""> &ensp;EMERJ</div>
             </div>
             
-            <div class="col">
-              <a href="https://site.emerj.jus.br/pagina/13/78">
-                <img class="icon-butons" src="Icons/legislação.png" alt="Icone de legislação">
-                </a>
-                <p>legislação</p> 
-              </div>
-
-            <div class="w100"></div>
-
-            <div class="col">
-              <a href="https://virtual.emerj.com.br/login/index.php">
-                <img class="icon-butons" src="Icons/ambientevirtual.png" alt="Icone de Ambiente Virtual">
-              </a>
-              <p>Ambiente Virtual</p>
+            <div class="modal-body">
+              <p>
+                Bem vindo ao app emerj.
+                <br>
+                Notamos que está acessando através de um iPhone.
+                <br>
+                Adicione esse aplicativo a sua tela inicial para fácil acesso e uma melhor experiência.
+              </p>
             </div>
-
-            <div class="col">
-              <a href="https://site.emerj.jus.br/pagina/1/71">
-                <img class="icon-butons"src="Icons/faleconosco.png" alt="Icone de Fale Conosco">
-              </a>
-              <p>Fale Conosco</p>
+            <div class="modal-body">
+              Clique
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+                <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
+              </svg>
+              na parte inferior do seu navegador, e depois em "Adicionar a tela de início"
             </div>
-            <div class="col">
+            <div class="modal-body">
+
+            <button type="button" id="close-modal" class="btn btn-primary btn-outline-light rounded-circle button-close close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
             </div>
           </div>
+        
+        <!-------------------------------------------------------------------------------------------->
+        <div class="android d-none align-items-center text-center">
+          <div class="card-header icon-emerj justify-content-around">
+            <div class="modal-title"><img src="./favicon-32x32.png" alt=""> &ensp;EMERJ</div>
+          </div>
+          
+          <div class="modal-body">
+            <p>
+              Bem vindo ao app emerj.
+              <br>
+              Adicione esse aplicativo a sua tela inicial para fácil acesso e uma melhor experiência.
+            </p>
+          </div>
+          <div class="modal-body">
+            Clique
+            <button
+            type="button"
+            class="btn btn-outline-light button p-1 disabled"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+              /></svg>&ensp; instalar
+          </button>
+            na parte inferior de sua tela e confirme.
+          </div>
+
+          <div class="modal-body">
+
+            <button type="button" id="close-modal-android" class="btn btn-primary btn-outline-light rounded-circle button-close close" data-dismiss="modal" aria-label="Close">
+              <svg style="pointer-events: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+            </div>
+        </div>
+        
+      </div>
+
+    </div>
+    </div>
+
+    <div class="cover">
+      <!-- capa LG-->
+      <img
+        class="img-fluid d-none d-lg-block d-md-block d-sm-block w-100"
+        src="./assets/Icons/capa_2.png"
+        alt="Entrada da Emerj - Escola de Magistratura do Rio de Janeiro"
+      />
+
+      <!--Capa ms-->
+      <img
+        class="img-fluid d-lg-none d-sm-none d-block"
+        src="./assets/Icons/capa.png"
+        alt="Entrada da Emerj - Escola de Magistratura do Rio de Janeiro"
+      />
+    </div>
+    <div class="container-fluid justify-content-center">
+      <div
+        class="container-sm container-md butom-grid text-center overflow-auto"
+      >
+        <div class="row justify-content-center butom-grid-in">
+          <div class="col-4 col-md-3 col-lg-2">
+            <a href="https://site.emerj.jus.br/cursos/5">
+              <img
+                class="icon-butons img-fluid"
+                src="./assets/Icons/icon-btn-png/cursos.png"
+                alt="Icone de Cursos"
+              />
+            </a>
+            <p>Cursos</p>
+          </div>
+
+          <div class="col-4 col-md-3 col-lg-2">
+            <a href="https://virtual.emerj.com.br/login/index.php">
+              <img
+                class="icon-butons img-fluid"
+                src="./assets/Icons/icon-btn-png/ambientevirtual.png"
+                alt="Icone de Ambiente Virtual"
+              />
+            </a>
+            <p>Ambiente Virtual</p>
+          </div>
+
+          <!-- repor a imagem de minha biblioteca-->
+          <div class="col-4 col-md-3 col-lg-2">
+            <a href="https://site.emerj.jus.br/admin/login/5">
+              <img
+                class="icon-butons img-fluid img-thumbnail border-0"
+                src="./assets/Icons/icon-btn-png/contorno_minhabiblioteca.png"
+                alt="Icone de Minha Biblioteca"
+              />
+            </a>
+            <p>Minha biblioteca</p>
+          </div>
+
+          <div class="w100 d-lg-none"></div>
+
+          <div class="col-4 col-md-3 col-lg-2">
+            <a href="https://www3.tjrj.jus.br/idserverjus-front/#/login">
+              <img
+                class="icon-butons img-fluid"
+                src="./assets/Icons/icon-btn-png/saldodehoras.png"
+                alt="Icone de Saldo de Horas"
+              />
+            </a>
+
+            <p>Saldo de Horas</p>
+          </div>
+
+          <div class="col-4 col-md-3 col-lg-2">
+            <a href="https://site.emerj.jus.br/pagina/13/78">
+              <img
+                class="icon-butons img-fluid"
+                src="./assets/Icons/icon-btn-png/legislação.png"
+                alt="Icone de legislação"
+              />
+            </a>
+            <p>Legislação</p>
+          </div>
+
+          <div class="col-4 col-md-3 col-lg-2">
+            <a href="https://site.emerj.jus.br/pagina/1/71">
+              <img
+                class="icon-butons img-fluid"
+                src="./assets/Icons/icon-btn-png/faleconosco.png"
+                alt="Icone de Fale Conosco"
+              />
+            </a>
+            <p>Fale Conosco</p>
+          </div>
+        </div>
+
+        <div>
+          <button
+            id="setup_button"
+            type="button"
+            class="btn btn-outline-light button"
+            onClick="installApp()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+              /></svg>&ensp; instalar
+          </button>
         </div>
       </div>
     </div>
-    <div class="card-footer footer text-muted">
-      <footer>
-        <p>Escola da Magistratura do Estado do Rio de Janeiro<br>
-          Rua Dom Manuel, n°25 - Centro - CEP 20010-90 </p>
-        <p>Telefone: <a href="http://">(21) 3533-3369</a> - CPNJ 35.949858/0001-81</p>
-        <br>
-      </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="sw.js"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+{
+  "name": "App Emerj",
+  "short_name": "EMERJ",
+  "description": "PWA da EMERJ",
+  "icons": [
+    {
+      "src": "./assets/Icons/EMERJ_icon_192X192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/Icons/EMERJ_icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false,
+  "start_url": ".",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "shortcuts": [
+    {
+      "name": "App Emerj",
+      "short_name": "EMERJ",
+      "description": "EMERJ",
+      "url": "?source=pwa"
+    }
+  ]
+}
