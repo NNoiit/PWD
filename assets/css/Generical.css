@@ -47,10 +47,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.row .cover{
+.cover{
   padding: 0;
 }
-.row .cover img {
+.cover img {
   width: 100%;
   max-height: 150px;
 }
@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
   transform: translate(-20%, -20%);
   max-width: 400px;
   max-height: 450px;
-  background-color: #0c344c;
+  background-color: #1f1f1f;
   z-index: 10;
 }
 .button-close{
