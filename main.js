@@ -1,3 +1,4 @@
+//remove later
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
     .register("/sw.js")
@@ -94,7 +95,7 @@ window.addEventListener("load", async () => {
 
 function installApp() {
   if(deferredPrompt == null){
-    alert("Aplicativo já instalado");
+    alert("Application already installed");
   } else {
     // Show the prompt
   deferredPrompt.prompt();
