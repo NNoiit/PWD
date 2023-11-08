@@ -6,7 +6,7 @@
 /*Start Header*/
 .banner {
   padding: 0;
-  background-color: #0c344c;
+  background-color: transparent;
   padding: 6px;
 }
 
@@ -23,15 +23,14 @@
   min-height: 40px;
 }
 
-#icon-emerj {
+#icon-bar {
   margin-left: 4px;
   width: 7vh;
   height: 7vh;
   min-width: 65px;
   min-height: 65px;
   position: relative;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 6px;
 }
 
 /* Start body*/
@@ -39,7 +38,7 @@
 body {
   overflow-y: scroll;
   height: 100vh;
-  background-image: linear-gradient(0deg,#0c344c, #475663);
+  background-image: linear-gradient(0deg, transparent, #111213);
   background-size: cover;
   background-attachment: fixed;
 }
